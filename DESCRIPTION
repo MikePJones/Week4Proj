@@ -1,7 +1,7 @@
 Package: Week4Proj
 Type: Package
 Title: Analyze and Display FARS Data
-Version: 0.1.2
+Version: 0.1.1
 Author: Michael Jones
 Maintainer: Michael Jones <mpj1219spam@gmail.com>
 Description: Take publicly available FARS data and identify
@@ -16,7 +16,8 @@ Imports: maps,
     readr,
     dplyr,
     tidyr,
-    graphics
+    graphics,
+    magrittr
 Suggests: knitr,
     rmarkdown,
     testthat
