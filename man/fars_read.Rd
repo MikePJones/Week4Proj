@@ -13,7 +13,9 @@ fars_read(filename)
 This function returns a data frame of all of the FARS data from the bz2 file
 }
 \examples{
+\dontrun{
 fars_read("accident_2013.csv.bz2")
 fars_read("notfound")
+}
 
 }

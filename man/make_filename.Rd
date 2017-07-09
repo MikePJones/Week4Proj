@@ -17,8 +17,10 @@ This function generates a filename that can be used in the fars_read function. I
 a specific year, and provides as output the full filename as a character string.
 }
 \examples{
+\dontrun{
 make_filename(2013)
 make_filename(2014)
 make_filename(2015)
+}
 
 }

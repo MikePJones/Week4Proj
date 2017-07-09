@@ -22,7 +22,9 @@ a given year.  It takes as inputs the state, represented by its number with all 
 and year.  The \code{filter} function from the \code{dplyr} package is used to consolidate the data
 }
 \examples{
+\dontrun{
 fars_map_state(5, 2013)
 fars_map_state(51, 2014)
+}
 
 }

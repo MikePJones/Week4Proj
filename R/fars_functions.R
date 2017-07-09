@@ -10,8 +10,10 @@
 #' @return This function returns a data frame of all of the FARS data from the bz2 file
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("accident_2013.csv.bz2")
 #' fars_read("notfound")
+#' }
 #'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
@@ -37,9 +39,11 @@ fars_read <- function(filename) {
 #' @return This function returns a character string of the full bz2 filename
 #'
 #' @examples
+#' \dontrun{
 #' make_filename(2013)
 #' make_filename(2014)
 #' make_filename(2015)
+#' }
 #'
 #' @export
 make_filename <- function(year) {
@@ -66,9 +70,11 @@ make_filename <- function(year) {
 #'    year's datafile
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(2013)
 #' fars_read_years(2014)
 #' fars_read_years(2015)
+#' }
 #'
 #' @importFrom dplyr mutate select %>%
 #'
@@ -104,9 +110,11 @@ fars_read_years <- function(years) {
 #'     datafile, then to add the relevant incident data to each row, and then finally to summarize each month
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(2013)
 #' fars_summarize_years(2014)
 #' fars_summarize_years(2015)
+#' }
 #'
 #' @importFrom dplyr bind_rows group_by summarize
 #' @importFrom tidyr spread
@@ -135,8 +143,10 @@ fars_summarize_years <- function(years) {
 #' to a state, the function returns a message that the provided state number is invalid
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(5, 2013)
 #' fars_map_state(51, 2014)
+#' }
 #'
 #' @importFrom maps map
 #' @importFrom dplyr filter

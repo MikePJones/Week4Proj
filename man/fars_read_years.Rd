@@ -26,8 +26,10 @@ makes use of the \code{\link{make_filename}} and \code{\link{fars_read}} functio
    year's datafile
 }
 \examples{
+\dontrun{
 fars_read_years(2013)
 fars_read_years(2014)
 fars_read_years(2015)
+}
 
 }

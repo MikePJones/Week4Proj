@@ -24,8 +24,10 @@ makes use of the \code{\link{fars_read_years}} function, which uses the \code{\l
     datafile, then to add the relevant incident data to each row, and then finally to summarize each month
 }
 \examples{
+\dontrun{
 fars_summarize_years(2013)
 fars_summarize_years(2014)
 fars_summarize_years(2015)
+}
 
 }
